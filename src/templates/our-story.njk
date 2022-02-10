@@ -1,11 +1,13 @@
 {% extends '_base.njk' %}
-{% block title %}our-story{% endblock %}
+{% block title %}GHC Our story{% endblock %}
 {% block content %}
     <main class="container pt-3">
         <h1 class="text-uppercase">Our story</h1>
-        <p>
+        <p class="lead">
             GHC started as a project of two friends and passionate baristas, John & Don in 2010. Believing as much in the hand of an educated barista as in the innovative equipment of the our ever-growing industry, GHC offers a full spectrum of brewing opportunities - from pour overs to syphon pots to finely executed espresso beverages. Each cup of coffee is made with love, precision and care.
         </p>
-        <img src="/img/espresso-machine.jpg" class="img-fluid" alt="Professional espresso machine"/>
+        <div class="ratio ratio-16x9 mt-4 mb-n5">
+            <img src="/img/espresso-machine.jpg" alt="Professional espresso machine"/>
+        </div>
     </main>
 {% endblock %}

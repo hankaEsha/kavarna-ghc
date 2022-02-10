@@ -84,7 +84,8 @@
     // $yellow: #ffc107; $yellow: $yellow !global; // #ffc107
     // $green: #198754; $green: $green !global; // #198754
     // $teal: #20c997; $teal: $teal !global; // #20c997
-    // $cyan: #0dcaf0; $cyan: $cyan !global; // #0dcaf0
+    $cyan: #0099ff;
+    $cyan: $cyan !global; // #0dcaf0
 
     /*
     $colors: (
@@ -104,7 +105,8 @@
     ); $colors: $colors !global;
     */
 
-    // $primary: $blue; $primary: $primary !global; // $blue
+    $primary: $cyan;
+    $primary: $primary !global; // $blue
     // $secondary: $gray-600; $secondary: $secondary !global; // $gray-600
     // $success: $green; $success: $success !global; // $green
     // $info: $cyan; $info: $info !global; // $cyan
@@ -397,7 +399,8 @@
     $enable-rfs: false;
     $enable-rfs: $enable-rfs !global; // true
     // $enable-validation-icons: true; $enable-validation-icons: $enable-validation-icons !global; // true
-    // $enable-negative-margins: false; $enable-negative-margins: $enable-negative-margins !global; // false
+    $enable-negative-margins: true;
+    $enable-negative-margins: $enable-negative-margins !global; // false
     // $enable-deprecation-messages: true; $enable-deprecation-messages: $enable-deprecation-messages !global; // true
     // $enable-important-utilities: true; $enable-important-utilities: $enable-important-utilities !global; // true
 
@@ -419,16 +422,15 @@
 
     // $spacer: 1rem; $spacer: $spacer !global; // 1rem
 
-    /*
     $spacers: (
         0: 0,
         1: $spacer * .25,
         2: $spacer * .5,
         3: $spacer,
         4: $spacer * 1.5,
-        5: $spacer * 3,
-    ); $spacers: $spacers !global;
-    */
+        5: $spacer * 4,
+    );
+    $spacers: $spacers !global;
 
     // $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null); $negative-spacers: $negative-spacers !global; // if($enable-negative-margins, negativify-map($spacers), null)
 
@@ -524,7 +526,7 @@
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1138px,
+        xl: 1140px,
     );
     $container-max-widths: $container-max-widths !global;
 
@@ -533,7 +535,7 @@
     // Set the number of columns and specify the width of the gutters.
 
     // $grid-columns: 12; $grid-columns: $grid-columns !global; // 12
-    $grid-gutter-width: 3rem;
+    $grid-gutter-width: 3.125rem;
     $grid-gutter-width: $grid-gutter-width !global; // 1.5rem
     // $grid-row-columns: 6; $grid-row-columns: $grid-row-columns !global; // 6
 
@@ -624,10 +626,11 @@
 
     // $font-weight-base: $font-weight-normal; $font-weight-base: $font-weight-base !global; // $font-weight-normal
 
-    // $line-height-base: 1.5; $line-height-base: $line-height-base !global; // 1.5
-    // $line-height-sm: 1.25; $line-height-sm: $line-height-sm !global; // 1.25
-    $line-height-lg: 1.8;
-    $line-height-lg: $line-height-lg !global; // 2
+    $line-height-sm: 1.5;
+    $line-height-sm: $line-height-sm !global; // 1.25
+    $line-height-base: 1.75;
+    $line-height-base: $line-height-base !global; // 1.5
+    // $line-height-lg: $line-height-lg: $line-height-lg !global; // 2
 
     // $h1-font-size: $font-size-base * 2.5; $h1-font-size: $h1-font-size !global; // $font-size-base * 2.5
     // $h2-font-size: $font-size-base * 2; $h2-font-size: $h2-font-size !global; // $font-size-base * 2
@@ -647,7 +650,8 @@
     ); $font-sizes: $font-sizes !global;
     */
 
-    // $headings-margin-bottom: $spacer * .5; $headings-margin-bottom: $headings-margin-bottom !global; // $spacer * .5
+    $headings-margin-bottom: $spacer * 0.75;
+    $headings-margin-bottom: $headings-margin-bottom !global; // $spacer * .5
     // $headings-font-family: null; $headings-font-family: $headings-font-family !global; // null
     // $headings-font-style: null; $headings-font-style: $headings-font-style !global; // null
     $headings-font-weight: 300;
@@ -1092,8 +1096,7 @@
 
     // Navbar
 
-    $navbar-padding-y: $spacer * 1;
-    $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
+    // $navbar-padding-y: $spacer * 0.5; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
     // $navbar-padding-x: null; $navbar-padding-x: $navbar-padding-x !global; // null
 
     // $navbar-nav-link-padding-x: .5rem; $navbar-nav-link-padding-x: $navbar-nav-link-padding-x !global; // .5rem
@@ -1103,7 +1106,8 @@
     // $nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2; $nav-link-height: $nav-link-height !global; // $font-size-base * $line-height-base + $nav-link-padding-y * 2
     // $navbar-brand-height: $navbar-brand-font-size * $line-height-base; $navbar-brand-height: $navbar-brand-height !global; // $navbar-brand-font-size * $line-height-base
     // $navbar-brand-padding-y: ($nav-link-height - $navbar-brand-height) * .5; $navbar-brand-padding-y: $navbar-brand-padding-y !global; // ($nav-link-height - $navbar-brand-height) * .5
-    // $navbar-brand-margin-end: 1rem; $navbar-brand-margin-end: $navbar-brand-margin-end !global; // 1rem
+    $navbar-brand-margin-end: 0rem;
+    $navbar-brand-margin-end: $navbar-brand-margin-end !global; // 1rem
 
     // $navbar-toggler-padding-y: .25rem; $navbar-toggler-padding-y: $navbar-toggler-padding-y !global; // .25rem
     // $navbar-toggler-padding-x: .75rem; $navbar-toggler-padding-x: $navbar-toggler-padding-x !global; // .75rem
@@ -1226,7 +1230,8 @@
     // $card-spacer-y: $spacer; $card-spacer-y: $card-spacer-y !global; // $spacer
     // $card-spacer-x: $spacer; $card-spacer-x: $card-spacer-x !global; // $spacer
     // $card-title-spacer-y: $spacer * .5; $card-title-spacer-y: $card-title-spacer-y !global; // $spacer * .5
-    // $card-border-width: $border-width; $card-border-width: $card-border-width !global; // $border-width
+    $card-border-width: 0;
+    $card-border-width: $card-border-width !global; // $border-width
     // $card-border-color: rgba($black, .125); $card-border-color: $card-border-color !global; // rgba($black, .125)
     // $card-border-radius: $border-radius; $card-border-radius: $card-border-radius !global; // $border-radius
     // $card-box-shadow: null; $card-box-shadow: $card-box-shadow !global; // null
@@ -1235,7 +1240,8 @@
     // $card-cap-padding-x: $card-spacer-x; $card-cap-padding-x: $card-cap-padding-x !global; // $card-spacer-x
     // $card-cap-bg: rgba($black, .03); $card-cap-bg: $card-cap-bg !global; // rgba($black, .03)
     // $card-cap-color: null; $card-cap-color: $card-cap-color !global; // null
-    // $card-height: null; $card-height: $card-height !global; // null
+    $card-height: 100%;
+    $card-height: $card-height !global; // null
     // $card-color: null; $card-color: $card-color !global; // null
     // $card-bg: $white; $card-bg: $card-bg !global; // $white
     // $card-img-overlay-padding: $spacer; $card-img-overlay-padding: $card-img-overlay-padding !global; // $spacer

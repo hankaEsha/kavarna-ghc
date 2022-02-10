@@ -13,22 +13,23 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-light bg-light mb-3">
-                <div class="container nav flex-column flex-md-row pl-1 pr-1">
-                    <a class="navbar-brand" href="/"><img src="/svg/logo.svg" class="img-fluid" alt="Generic Hipster Coffee" width="150"/>
+            <nav class="navbar navbar-light bg-light mb-3 pt-3 pb-3">
+                <div class="container flex-column flex-md-row px-0">
+                    <a class="navbar-brand me-4 pt-0" href="/">
+                        <img src="/svg/logo.svg" alt="Generic Hipster Coffee"/>
                     </a>
-                    <ul class="navbar-nav mb-2 mb-lg-0 flex-row justify-content-evenly">
-                        <li class="nav-item">
+                    <ul class="navbar-nav flex-row gap-sm-4">
+                        <li class="nav-item px-2">
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-2">
                             <a class="nav-link" href="/menu">Menu</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-2">
                             <a class="nav-link" href="/coffee">Coffee</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-6" href="/our-story">Our Story</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/our-story">Our Story</a>
                         </li>
                     </ul>
                 </div>
@@ -36,36 +37,32 @@
         </header>
         {% block content %}{% endblock %}
         {#
-                                        <!-- Optional JavaScript -->
-                                        <!-- Bootstrap JS first and your own script at the end -->
-                                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-                                        <script src="js/custom.js"></script>
-                                        #}
-        <footer class="bg-dark">
-            <div class="container rectangle d-flex align-items-end justify-content-center pb-5">
-                <div>
-                    <ul class="nav justify-content-center flex-row lh-base">
-                        <li class="nav-item">
-                            <a class="nav-link text-white active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/menu">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/coffee">Coffee</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/our-story">Our Story</a>
-                        </li>
-                    </ul>
-                    <p class="text-white text-center fw-bold lead lh-base text-uppercase">#hipstersmakecoffee</p>
-                    <p class="text-white text-center lh-base mb-0">Follow us on
-                        <a href="#">Twitter</a>
-                        and
-                        <a href="#">Instagram</a>
-                    </p>
-                </div>
-            </div>
+        <!-- Optional JavaScript -->
+        <!-- Bootstrap JS first and your own script at the end -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/custom.js"></script>
+        #}
+        <footer class="bg-dark mt-3 py-5">
+            <ul class="nav justify-content-center ps-sm-3 mt-2 mb-2 gap-sm-4">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link text-decoration-underline" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="/menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="/coffee">Coffee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="/our-story">Our Story</a>
+                </li>
+            </ul>
+            <p class="text-white text-center fw-bold h5 mb-2 pt-5">#hipstersmakecoffee</p>
+            <p class="text-white text-center mb-4">Follow us on
+                <a href="#">Twitter</a>
+                and
+                <a href="#">Instagram</a>
+            </p>
         </footer>
     </body>
 </html>
