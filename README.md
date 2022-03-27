@@ -1,4 +1,4 @@
-# A basic template to develop a website based on Bootstrap 5
+# A responsive website based on Bootstrap 5
 
 Includes:
 
