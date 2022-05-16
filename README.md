@@ -87,7 +87,7 @@ Upload everything in `/dist/` folder to the server.
 - set up an account on https://vercel.com (if you do not have one)
 
 **CLI**
-- instal Vercel: ```npm i vercel``` 
+- install Vercel: `npm i vercel`
 - ```npm audit fix``` (if needed)
 - ```npm run vercel```
     * log in to Vercel + set up project info
