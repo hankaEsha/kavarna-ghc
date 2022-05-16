@@ -53,15 +53,9 @@ npm run build
 
 `index.css` is compiled from `src/scss/index.scss` by [Sass](http://sass-lang.com/).
 
-You don't know _Scss_ syntax or don't want to use it? Just use plain CSS in `src/scss/_custom-css.scss`.
-
 ## HTML (Nunjucks templates)
 
 HTML is generated from [Nunjucks](https://mozilla.github.io/nunjucks/) templates in `src/templates`.
-
-You don't need to leverage the power of templates. You can just create plain HTML files with `*.njk` extension.
-
-If you don't want a template to be turned into HTML file start it with `_`. Typically these are templates used for _include_ or _extend_.
 
 [Documentation for Nunjucks](https://mozilla.github.io/nunjucks/templating.html).
 
@@ -73,36 +67,14 @@ Folders and files from `/src/static/` are simply copied directly to `/dist/` fol
 
 ## Bootstrap
 
-You can comment out Bootstrap components you don't need in `/src/index.scss`.
-
 `/src/_customized-bootstrap-variables.scss` contains only customized Bootstrap variables.
 
 See `browserslist` in `package.json` for supported browsers.
 
 ## Deployment
-
-Upload everything in `/dist/` folder to the server.
-
 ### Vercel deployment set up
-- set up an account on https://vercel.com (if you do not have one)
+Set up an account on https://vercel.com (if you do not have one).
 
-**CLI**
-- install Vercel: `npm i vercel`
-- ```npm audit fix``` (if needed)
-- ```npm run vercel```
-    * log in to Vercel + set up project info
-    * upload runs ... *Default Project Settings pops up:*
-        - ? Want to override the settings? [y/N] -> `N`
-- you can change your domain's name at vercel.com/yourproject if you wish
-- ```npx vercel``` (can be used for running the deployment) 
-- BUT
-- go to the file "package.json", find "scripts" and amend to read `"deploy": "gulp build && vercel && vercel --prod"`
-- from now on run ```npm run deploy``` whenever you want to publish a new version
-
-- setting up Vercel affects these three files:
-    ``` 
-    modified:   .gitignore
-    modified:   package-lock.json
-    modified:   package.json 
-    ```
-    
+### Vercel deployment
+Use `npm run deploy`. This will publish everything in `/dist/` folder to Vercel.
+If you wish to deploy to: ghc-hankaesha.vercel.app, please contact: hanka.esha2@gmail.com
