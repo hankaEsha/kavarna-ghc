@@ -30,7 +30,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp develop",
     "build": "gulp build",
-    "deploy": "gulp build && vercel && vercel --prod"
+    "deploy": "gulp build && vercel --prod"
   },
   "prettier": {
     "tabWidth": 4,
