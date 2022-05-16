@@ -4,7 +4,30 @@
     <main class="container pt-3">
         <h1>Generic Hipster Coffee</h1>
         <p class="h2">Specialty coffee, fresh food & local community.</p>
-        <img src="/img/counter-crop.jpg" class="img-fluid mt-3 mb-4" alt="Photo of cafe's inside"/>
+        <picture class="img-fluid mt-3 mb-4">
+            <source srcset="
+/img/counter-index-page/webp/counter-w_270.webp 270w,
+/img/counter-index-page/webp/counter-w_760.webp 760w,
+/img/counter-index-page/webp/counter-w_1180.webp 1180w,
+/img/counter-index-page/webp/counter-w_1390.webp 1390w,
+/img/counter-index-page/webp/counter-w_1732.webp 1732w,
+/img/counter-index-page/webp/counter-w_2052.webp 2052w,
+/img/counter-index-page/webp/counter-w_2180.webp 2180w" src="/img/counter-index-page/webp/counter-w_1180.webp" type="image/webp">
+            <img class="img-fluid mt-3 mb-4" srcset="
+/img/counter-index-page/jpg/counter-w_270.jpg 270w,
+/img/counter-index-page/jpg/counter-w_702.jpg 702w,
+/img/counter-index-page/jpg/counter-w_1006.jpg 1006w,
+/img/counter-index-page/jpg/counter-w_1282.jpg 1282w,
+/img/counter-index-page/jpg/counter-w_1531.jpg 1531w,
+/img/counter-index-page/jpg/counter-w_1976.jpg 1976w,
+/img/counter-index-page/jpg/counter-w_2180.jpg 2180w" src="/img/counter-index-page/jpg/counter-w_1006.jpg" sizes="
+            (min-width: 1200px) 1090px,
+            (min-width: 992px) 910px,
+            (min-width: 768px) 670px,
+            (min-width: 576px) 490px,
+            calc(100vw - 2 * 1.5625rem)
+            " width="1090" height="613" alt="Photo of cafe's inside - modern but cozy interier"/>
+        </picture>
         <div class="row">
             <div class="col-sm">
                 <h4>Opening hours</h4>

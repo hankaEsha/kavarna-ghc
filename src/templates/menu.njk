@@ -205,7 +205,30 @@
         </section>
     </div>
     <div class="ratio ratio-16x9 mt-3 mb-n5">
-        <img src="/img/espresso-machine-detail-crop.jpg" alt="Detail of espresso machine"/>
+        <picture class="ratio ratio-16x9">
+            <source srcset="
+/img/espresso-detail-menu-page/webp/espresso-detail-w_270.webp 270w,
+/img/espresso-detail-menu-page/webp/espresso-detail-w_752.webp 752w,
+/img/espresso-detail-menu-page/webp/espresso-detail-w_1145.webp 1145w,
+/img/espresso-detail-menu-page/webp/espresso-detail-w_1390.webp 1971w,
+/img/espresso-detail-menu-page/webp/espresso-detail-w_1523.webp 1523w,
+/img/espresso-detail-menu-page/webp/espresso-detail-w_1842.webp 1842w,
+/img/espresso-detail-menu-page/webp/espresso-detail-w_2180.webp 2180w" src="/img/espresso-detail-menu-page/webp/espresso-detail-w_1145.webp" type="image/webp">
+            <img srcset="
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_270.jpg 270w,
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_627.jpg 627w,
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_1141.jpg 1141w,
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_1351.jpg 1351w,
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_1550.jpg 1550w,
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_1928.jpg 1928w,
+/img/espresso-detail-menu-page/jpg/espresso-detail-w_2180.jpg 2180w" src="/img/espresso-detail-menu-page/jpg/espresso-detail-w_1141.jpg" sizes="
+            (min-width: 1200px) 1090px,
+            (min-width: 992px) 910px,
+            (min-width: 768px) 670px,
+            (min-width: 576px) 490px,
+            calc(100vw - 2 * 1.5625rem)
+            " width="1090" height="613" alt="Espresso machine detail"/>
+        </picture>
     </div>
 </main>
 {% endblock %}
