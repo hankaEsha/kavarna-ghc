@@ -61,6 +61,8 @@ HTML is generated from [Nunjucks](https://mozilla.github.io/nunjucks/) templates
 
 If you need some data to be available in all templates, use `templates/data.json` for that.
 
+If you don't want a template to be turned into HTML file start it with `_`. Typically these are templates used for _include_ or _extend_.
+
 ## Static files (JavaScript, images, …)
 
 Folders and files from `/src/static/` are simply copied directly to `/dist/` folder.
